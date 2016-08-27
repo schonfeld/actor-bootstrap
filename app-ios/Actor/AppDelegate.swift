@@ -7,54 +7,35 @@ import ActorSDK
 
 @UIApplicationMain
 class AppDelegate: ActorApplicationDelegate {
-
+    
     override init() {
         super.init()
         
+        ActorSDK.sharedActor().endpoints = ["tcp://tcp.hyenas.sexywaffles.com:8443"]
+        ActorSDK.sharedActor().appName = "SexyWaffles"
+        
+        ActorSDK.sharedActor().enableCalls = false
+        ActorSDK.sharedActor().enableVideoCalls = false
+        ActorSDK.sharedActor().enablePhoneBookImport = false
+        ActorSDK.sharedActor().authStrategy = .EmailOnly
+        
+        ActorSDK.sharedActor().style.welcomeLogo = UIImage(named: "sexywaffles-logo")
+        
         // Invite URL configuration
-        ActorSDK.sharedActor().inviteUrlHost = "quit.email"
-        ActorSDK.sharedActor().inviteUrlScheme = "actor"
+        ActorSDK.sharedActor().inviteUrlHost = "hyenas.sexywaffles"
+        ActorSDK.sharedActor().inviteUrlScheme = "gooner"
         
         // Support Information configuration
-        ActorSDK.sharedActor().supportHomepage = "https://actor.im"
-        ActorSDK.sharedActor().supportTwitter = "actorapp"
-        ActorSDK.sharedActor().supportAccount = "75551234567"
-        ActorSDK.sharedActor().supportEmail = "support@actor.im"
-        ActorSDK.sharedActor().supportActivationEmail = "activation@actor.im"
-        
-        // Invitations to app
-        ActorSDK.sharedActor().inviteUrl = "https://actor.im/dl"
         
         // Push Configuration
         // Enter Here your push id
         // ActorSDK.sharedActor().apiPushId = ???
         // Enable Push Notifications only after log in
-        // ActorSDK.sharedActor().autoPushMode = AAAutoPush.AfterLogin
+        ActorSDK.sharedActor().autoPushMode = AAAutoPush.AfterLogin
         
         // Styling of app
-        
         let style = ActorSDK.sharedActor().style
-        
-        // Default Status Bar style
-        // style.vcStatusBarStyle = .LightContent
-        
-        // Navigation colors
-        // style.navigationBgColor = UIColor(rgb: 0x437cb7)
-        // style.navigationTintColor = UIColor.whiteColor()
-        // style.navigationTitleColor = UIColor.whiteColor()
-        // style.navigationSubtitleColor = UIColor.whiteColor().alpha(0.64)
-        // style.navigationSubtitleActiveColor = UIColor.whiteColor()
-        // style.navigationHairlineHidden = true
-        
-        // Full screen placeholder. Set here value that matches UINavigationBar color
-        // style.placeholderBgColor = UIColor(rgb: 0x528dbe)
-        
-        // Override User's online/offline statuses in navigation color
-        // style.userOfflineNavigationColor = UIColor.whiteColor().alpha(0.64)
-        // style.userOnlineNavigationColor = UIColor.whiteColor()
-        
-        // Override search status bar style
-        // style.searchStatusBarStyle = .Default
+        style.chatBgColor = UIColor.whiteColor()
         
         // Creating Actor
         ActorSDK.sharedActor().createActor()
@@ -65,5 +46,21 @@ class AppDelegate: ActorApplicationDelegate {
         // Showing
         ActorSDK.sharedActor().presentMessengerInNewWindow()
         return true
+    }
+    
+    override func actorControllerForAuthStart() -> UIViewController? {
+        return AuthController()
+    }
+    
+    override func actorControllerForSettings() -> UIViewController? {
+        return SettingsController()
+    }
+    
+    override func actorControllerForContacts() -> UIViewController? {
+        return ContactsController()
+    }
+    
+    override func actorControllerForStart() -> UIViewController? {
+        return RootController()
     }
 }

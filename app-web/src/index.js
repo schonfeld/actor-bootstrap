@@ -1,61 +1,27 @@
-/*
- * Copyright (C) 2015 Actor LLC. <https://actor.im>
- */
+import ActorSDK from '../src/sdk/actor-sdk';
+import ActorSDKDelegate from '../src/sdk/actor-sdk-delegate';
 
-import { ActorSDK, ActorSDKDelegate } from 'actor-sdk';
+const delegate = new ActorSDKDelegate({
+  components: {},
+  features: {
+    calls: false,
+    search: true,
+    editing: true,
+    blocking: true,
+    writeButton: false
+  },
+  actions: {},
+  l18n: {}
+});
 
-// Main application config
-const config = {
-  // endpoints: [
-  //   'wss://front1-ws-mtproto-api-rev2.actor.im',
-  //   'wss://front2-ws-mtproto-api-rev2.actor.im'
-  // ],
-  // isExperimental: true,
-  // rootElement: 'actor-web-app',
-  // forceLocale: 'en-US',
-  // twitter: 'actorapp',
-  // homePage: 'http://actor.im',
-  // appName: 'Actor'
-};
+const app = new ActorSDK({
+  delegate,
+  endpoints: [
+    'wss://ws.hyenas.sexywaffles.com:443'
+  ],
+  isExperimental: true,
+  homePage: 'https://hyenas.sexywaffles.com',
+  appName: 'SexyWaffles'
+});
 
-// Components overriding
-const components = {
-  // login: null,
-  // install: null,
-  // deactivated: null,
-  // joinGroup: null,
-
-  // sidebar: {
-  //   header: null,
-  //   footer: null
-  // },
-
-  // dialog: {
-  //   toolbar: null,
-  //   compose: null,
-  //   messages: {
-  //    service: null
-  //    text: null
-  //    modern: null
-  //    photo: null
-  //    document: null
-  //    contact: null
-  //    location: null
-  //    voice: null
-  //   }
-  // }
-};
-
-// Actions overriding
-const actions = {
-  // setLoggedIn: null
-  // setLoggedOut: null
-};
-
-// Translation overriding
-const l18n = {}
-
-const delegate = new ActorSDKDelegate({ components, actions, l18n });
-
-const app = new ActorSDK({delegate, ...config});
 app.startApp();

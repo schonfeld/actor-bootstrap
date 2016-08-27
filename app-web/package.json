@@ -32,7 +32,7 @@
     "test": "eslint src/"
   },
   "dependencies": {
-    "actor-sdk": "1.0.397",
+    "actor-sdk": "git://github.com/schonfeld/ActorSDK-Web",
     "classnames": "2.2.5",
     "react": "15.1.0"
   },

@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02432EA41D708EB900ACCA5E /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02432EA31D708EB900ACCA5E /* RootController.swift */; };
+		02432EA71D70905600ACCA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02432EA51D70905600ACCA5E /* LaunchScreen.storyboard */; };
+		02CC639F1D6FEA860083663A /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC639E1D6FEA860083663A /* AuthController.swift */; };
+		02CC63A31D6FEF840083663A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02CC63A21D6FEF840083663A /* Localizable.strings */; };
+		02CC63A51D705A6B0083663A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC63A41D705A6B0083663A /* SettingsController.swift */; };
+		02F3D3C81D70B32100CAC9D7 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3D3C71D70B32100CAC9D7 /* ContactsController.swift */; };
 		063073F01BCFBFFB0053DEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063073EF1BCFBFFB0053DEAF /* AppDelegate.swift */; };
 		063073F71BCFBFFB0053DEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063073F61BCFBFFB0053DEAF /* Assets.xcassets */; };
-		063073FA1BCFBFFB0053DEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063073F81BCFBFFB0053DEAF /* LaunchScreen.storyboard */; };
 		42DD952E93109C0AE60A5581 /* Pods_Actor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9DB9313BCEBD8238D7AE0D /* Pods_Actor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		063073EC1BCFBFFB0053DEAF /* Actor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Actor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02432EA31D708EB900ACCA5E /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		02432EA61D70905600ACCA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02CC639E1D6FEA860083663A /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
+		02CC63A21D6FEF840083663A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		02CC63A41D705A6B0083663A /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		02F3D3C71D70B32100CAC9D7 /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		063073EC1BCFBFFB0053DEAF /* SexyWaffles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SexyWaffles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		063073EF1BCFBFFB0053DEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		063073F61BCFBFFB0053DEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		063073F91BCFBFFB0053DEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063073FB1BCFBFFB0053DEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063074031BCFC2560053DEAF /* ActorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActorSDK.framework; path = "Pods/ActorSDK-iOS/Frameworks/ActorSDK.framework"; sourceTree = "<group>"; };
 		06D26AFC1BE5AD0E008E70B6 /* Actor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Actor.entitlements; sourceTree = "<group>"; };
@@ -42,7 +52,7 @@
 		063073E31BCFBFFB0053DEAF = {
 			isa = PBXGroup;
 			children = (
-				063073EE1BCFBFFB0053DEAF /* Actor */,
+				063073EE1BCFBFFB0053DEAF /* SexyWaffles */,
 				063073ED1BCFBFFB0053DEAF /* Products */,
 				4C8BCEB99127310F7C41544A /* Pods */,
 				85D48FC25342EFD8DE35C9A2 /* Frameworks */,
@@ -52,27 +62,33 @@
 		063073ED1BCFBFFB0053DEAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				063073EC1BCFBFFB0053DEAF /* Actor.app */,
+				063073EC1BCFBFFB0053DEAF /* SexyWaffles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		063073EE1BCFBFFB0053DEAF /* Actor */ = {
+		063073EE1BCFBFFB0053DEAF /* SexyWaffles */ = {
 			isa = PBXGroup;
 			children = (
 				063D4AC31BD8235600017660 /* Resources */,
 				063073EF1BCFBFFB0053DEAF /* AppDelegate.swift */,
 				06D26AFC1BE5AD0E008E70B6 /* Actor.entitlements */,
 				063073FB1BCFBFFB0053DEAF /* Info.plist */,
+				02CC639E1D6FEA860083663A /* AuthController.swift */,
+				02CC63A41D705A6B0083663A /* SettingsController.swift */,
+				02432EA31D708EB900ACCA5E /* RootController.swift */,
+				02F3D3C71D70B32100CAC9D7 /* ContactsController.swift */,
 			);
+			name = SexyWaffles;
 			path = Actor;
 			sourceTree = "<group>";
 		};
 		063D4AC31BD8235600017660 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				02432EA51D70905600ACCA5E /* LaunchScreen.storyboard */,
 				063073F61BCFBFFB0053DEAF /* Assets.xcassets */,
-				063073F81BCFBFFB0053DEAF /* LaunchScreen.storyboard */,
+				02CC63A21D6FEF840083663A /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -99,24 +115,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		063073EB1BCFBFFB0053DEAF /* Actor */ = {
+		063073EB1BCFBFFB0053DEAF /* SexyWaffles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 063073FE1BCFBFFB0053DEAF /* Build configuration list for PBXNativeTarget "Actor" */;
+			buildConfigurationList = 063073FE1BCFBFFB0053DEAF /* Build configuration list for PBXNativeTarget "SexyWaffles" */;
 			buildPhases = (
-				166C9FFCE1751C2D27F5692A /* Check Pods Manifest.lock */,
+				166C9FFCE1751C2D27F5692A /* [CP] Check Pods Manifest.lock */,
 				063073E81BCFBFFB0053DEAF /* Sources */,
 				063073E91BCFBFFB0053DEAF /* Frameworks */,
 				063073EA1BCFBFFB0053DEAF /* Resources */,
-				FB216A0B9436FF9D82DBE9DC /* Embed Pods Frameworks */,
-				A9C22209B3915AE0BC361CE5 /* Copy Pods Resources */,
+				FB216A0B9436FF9D82DBE9DC /* [CP] Embed Pods Frameworks */,
+				A9C22209B3915AE0BC361CE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Actor;
+			name = SexyWaffles;
 			productName = ActorCloud;
-			productReference = 063073EC1BCFBFFB0053DEAF /* Actor.app */;
+			productReference = 063073EC1BCFBFFB0053DEAF /* SexyWaffles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +146,7 @@
 				TargetAttributes = {
 					063073EB1BCFBFFB0053DEAF = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = HVJR44Y5B6;
+						DevelopmentTeam = CWU2SFQ4UF;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -145,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 063073E71BCFBFFB0053DEAF /* Build configuration list for PBXProject "Actor" */;
+			buildConfigurationList = 063073E71BCFBFFB0053DEAF /* Build configuration list for PBXProject "SexyWaffles" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -158,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				063073EB1BCFBFFB0053DEAF /* Actor */,
+				063073EB1BCFBFFB0053DEAF /* SexyWaffles */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +184,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063073FA1BCFBFFB0053DEAF /* LaunchScreen.storyboard in Resources */,
+				02432EA71D70905600ACCA5E /* LaunchScreen.storyboard in Resources */,
+				02CC63A31D6FEF840083663A /* Localizable.strings in Resources */,
 				063073F71BCFBFFB0053DEAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,14 +193,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		166C9FFCE1751C2D27F5692A /* Check Pods Manifest.lock */ = {
+		166C9FFCE1751C2D27F5692A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,14 +208,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		A9C22209B3915AE0BC361CE5 /* Copy Pods Resources */ = {
+		A9C22209B3915AE0BC361CE5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,14 +223,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Actor/Pods-Actor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB216A0B9436FF9D82DBE9DC /* Embed Pods Frameworks */ = {
+		FB216A0B9436FF9D82DBE9DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,17 +245,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02432EA41D708EB900ACCA5E /* RootController.swift in Sources */,
+				02F3D3C81D70B32100CAC9D7 /* ContactsController.swift in Sources */,
+				02CC63A51D705A6B0083663A /* SettingsController.swift in Sources */,
 				063073F01BCFBFFB0053DEAF /* AppDelegate.swift in Sources */,
+				02CC639F1D6FEA860083663A /* AuthController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		063073F81BCFBFFB0053DEAF /* LaunchScreen.storyboard */ = {
+		02432EA51D70905600ACCA5E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				063073F91BCFBFFB0053DEAF /* Base */,
+				02432EA61D70905600ACCA5E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -346,8 +367,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Actor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.actor.bootstrap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
+				PRODUCT_NAME = SexyWaffles;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -369,8 +390,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Actor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.actor.bootstrap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
+				PRODUCT_NAME = SexyWaffles;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -378,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		063073E71BCFBFFB0053DEAF /* Build configuration list for PBXProject "Actor" */ = {
+		063073E71BCFBFFB0053DEAF /* Build configuration list for PBXProject "SexyWaffles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				063073FC1BCFBFFB0053DEAF /* Debug */,
@@ -387,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		063073FE1BCFBFFB0053DEAF /* Build configuration list for PBXNativeTarget "Actor" */ = {
+		063073FE1BCFBFFB0053DEAF /* Build configuration list for PBXNativeTarget "SexyWaffles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				063073FF1BCFBFFB0053DEAF /* Debug */,
