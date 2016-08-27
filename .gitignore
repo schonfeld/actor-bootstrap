@@ -8,5 +8,4 @@ app-android/build
 *.iml
 local.properties
 node_modules
-dist
 app-desktop/build
