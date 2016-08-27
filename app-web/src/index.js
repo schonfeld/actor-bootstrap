@@ -1,5 +1,4 @@
-import ActorSDK from '../src/sdk/actor-sdk';
-import ActorSDKDelegate from '../src/sdk/actor-sdk-delegate';
+import { ActorSDK, ActorSDKDelegate } from 'actor-sdk';
 
 const delegate = new ActorSDKDelegate({
   components: {},
