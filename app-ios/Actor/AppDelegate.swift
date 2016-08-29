@@ -29,7 +29,7 @@ class AppDelegate: ActorApplicationDelegate {
         
         // Push Configuration
         // Enter Here your push id
-        // ActorSDK.sharedActor().apiPushId = ???
+        ActorSDK.sharedActor().apiPushId = 22081987
         // Enable Push Notifications only after log in
         ActorSDK.sharedActor().autoPushMode = AAAutoPush.AfterLogin
         
