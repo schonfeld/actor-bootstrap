@@ -4,6 +4,7 @@
 
 import UIKit
 import ActorSDK
+import HockeySDK;
 
 @UIApplicationMain
 class AppDelegate: ActorApplicationDelegate {
@@ -43,6 +44,11 @@ class AppDelegate: ActorApplicationDelegate {
     
     override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         super.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        BITHockeyManager.sharedHockeyManager().configureWithIdentifier("a1f964f1c155443f9b9aa0639772c029");
+        BITHockeyManager.sharedHockeyManager().startManager();
+        BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation(); // This line is obsolete in the crash only build
+
         // Showing
         ActorSDK.sharedActor().presentMessengerInNewWindow()
         return true

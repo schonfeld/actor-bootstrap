@@ -1,12 +1,13 @@
 platform :ios, '8.0'
 use_frameworks!
 
-workspace 'Actor'
-xcodeproj 'Actor.xcodeproj'
+workspace 'SexyWaffles'
+xcodeproj 'SexyWaffles.xcodeproj'
 
 inhibit_all_warnings!
 
-target 'Actor' do
-    xcodeproj 'Actor.xcodeproj'
+target 'SexyWaffles' do
+    xcodeproj 'SexyWaffles.xcodeproj'
     pod 'ActorSDK-iOS'
+    pod 'HockeySDK', '~> 4.1.0'
 end
