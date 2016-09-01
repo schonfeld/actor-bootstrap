@@ -4,7 +4,7 @@
 
 import UIKit
 import ActorSDK
-import HockeySDK;
+import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: ActorApplicationDelegate {
@@ -52,6 +52,10 @@ class AppDelegate: ActorApplicationDelegate {
         // Showing
         ActorSDK.sharedActor().presentMessengerInNewWindow()
         return true
+    }
+    
+    override func actorConfigureBubbleLayouters(builtIn: [AABubbleLayouter]) -> [AABubbleLayouter] {
+        return [MessageView()]
     }
     
     override func actorControllerForAuthStart() -> UIViewController? {

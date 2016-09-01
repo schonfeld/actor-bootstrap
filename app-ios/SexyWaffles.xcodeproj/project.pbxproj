@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		02432EA41D708EB900ACCA5E /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02432EA31D708EB900ACCA5E /* RootController.swift */; };
 		02432EA71D70905600ACCA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02432EA51D70905600ACCA5E /* LaunchScreen.storyboard */; };
+		0257F2E11D7667CA00912CEE /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257F2E01D7667CA00912CEE /* MessageView.swift */; };
 		02CC639F1D6FEA860083663A /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC639E1D6FEA860083663A /* AuthController.swift */; };
 		02CC63A31D6FEF840083663A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02CC63A21D6FEF840083663A /* Localizable.strings */; };
 		02CC63A51D705A6B0083663A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC63A41D705A6B0083663A /* SettingsController.swift */; };
 		02F3D3C81D70B32100CAC9D7 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3D3C71D70B32100CAC9D7 /* ContactsController.swift */; };
 		063073F01BCFBFFB0053DEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063073EF1BCFBFFB0053DEAF /* AppDelegate.swift */; };
 		063073F71BCFBFFB0053DEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063073F61BCFBFFB0053DEAF /* Assets.xcassets */; };
-		42DD952E93109C0AE60A5581 /* Pods_Actor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9DB9313BCEBD8238D7AE0D /* Pods_Actor.framework */; };
 		F29710E5BB3C5031426DCCA1 /* Pods_SexyWaffles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE4759212CABE9F896C2EF9 /* Pods_SexyWaffles.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02432EA31D708EB900ACCA5E /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		02432EA61D70905600ACCA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0257F2E01D7667CA00912CEE /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		02CC639E1D6FEA860083663A /* AuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		02CC63A21D6FEF840083663A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		02CC63A41D705A6B0083663A /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -32,12 +33,9 @@
 		063073FB1BCFBFFB0053DEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063074031BCFC2560053DEAF /* ActorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActorSDK.framework; path = "Pods/ActorSDK-iOS/Frameworks/ActorSDK.framework"; sourceTree = "<group>"; };
 		06D26AFC1BE5AD0E008E70B6 /* Actor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Actor.entitlements; sourceTree = "<group>"; };
-		3A3BCE672BB717C3BD188425 /* Pods-Actor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Actor/Pods-Actor.debug.xcconfig"; sourceTree = "<group>"; };
-		730EEFBC8F4DD8D1290CD896 /* Pods-Actor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Actor/Pods-Actor.release.xcconfig"; sourceTree = "<group>"; };
 		8F9DB9313BCEBD8238D7AE0D /* Pods_Actor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Actor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9142023514F13E19F8DAB358 /* Pods-SexyWaffles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexyWaffles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SexyWaffles/Pods-SexyWaffles.debug.xcconfig"; sourceTree = "<group>"; };
 		9CE4759212CABE9F896C2EF9 /* Pods_SexyWaffles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SexyWaffles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC7EB4654ECD3B9BAF8A02D /* Pods_ActorEnterprise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActorEnterprise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF49DEFAF6EF5D97CB56AD4A /* Pods-SexyWaffles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SexyWaffles.release.xcconfig"; path = "Pods/Target Support Files/Pods-SexyWaffles/Pods-SexyWaffles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DD952E93109C0AE60A5581 /* Pods_Actor.framework in Frameworks */,
 				F29710E5BB3C5031426DCCA1 /* Pods_SexyWaffles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +80,7 @@
 				02CC63A41D705A6B0083663A /* SettingsController.swift */,
 				02432EA31D708EB900ACCA5E /* RootController.swift */,
 				02F3D3C71D70B32100CAC9D7 /* ContactsController.swift */,
+				0257F2E01D7667CA00912CEE /* MessageView.swift */,
 			);
 			name = SexyWaffles;
 			path = Actor;
@@ -101,8 +99,6 @@
 		4C8BCEB99127310F7C41544A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3A3BCE672BB717C3BD188425 /* Pods-Actor.debug.xcconfig */,
-				730EEFBC8F4DD8D1290CD896 /* Pods-Actor.release.xcconfig */,
 				9142023514F13E19F8DAB358 /* Pods-SexyWaffles.debug.xcconfig */,
 				EF49DEFAF6EF5D97CB56AD4A /* Pods-SexyWaffles.release.xcconfig */,
 			);
@@ -113,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				063074031BCFC2560053DEAF /* ActorSDK.framework */,
-				CEC7EB4654ECD3B9BAF8A02D /* Pods_ActorEnterprise.framework */,
 				8F9DB9313BCEBD8238D7AE0D /* Pods_Actor.framework */,
 				9CE4759212CABE9F896C2EF9 /* Pods_SexyWaffles.framework */,
 			);
@@ -267,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0257F2E11D7667CA00912CEE /* MessageView.swift in Sources */,
 				02432EA41D708EB900ACCA5E /* RootController.swift in Sources */,
 				02F3D3C81D70B32100CAC9D7 /* ContactsController.swift in Sources */,
 				02CC63A51D705A6B0083663A /* SettingsController.swift in Sources */,
@@ -393,7 +389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
 				PRODUCT_NAME = SexyWaffles;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6d5bb89d-5149-4ba0-9b45-5ebe80e76a5e";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -417,7 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
 				PRODUCT_NAME = SexyWaffles;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "6d5bb89d-5149-4ba0-9b45-5ebe80e76a5e";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
