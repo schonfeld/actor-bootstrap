@@ -379,7 +379,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_ENTITLEMENTS = Actor/Actor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = CWU2SFQ4UF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
 				PRODUCT_NAME = SexyWaffles;
 				PROVISIONING_PROFILE = "5723c4d8-b63c-4587-b895-c7001ec8954f";
+				PROVISIONING_PROFILE_SPECIFIER = "SexyWaffles Group";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -404,7 +406,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_ENTITLEMENTS = Actor/Actor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = CWU2SFQ4UF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.schonfeld.sexywaffles;
 				PRODUCT_NAME = SexyWaffles;
 				PROVISIONING_PROFILE = "5723c4d8-b63c-4587-b895-c7001ec8954f";
+				PROVISIONING_PROFILE_SPECIFIER = "SexyWaffles Group";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
