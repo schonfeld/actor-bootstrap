@@ -20,42 +20,32 @@ class AppDelegate: ActorApplicationDelegate {
         ActorSDK.sharedActor().enablePhoneBookImport = false
         ActorSDK.sharedActor().authStrategy = .EmailOnly
         
-        ActorSDK.sharedActor().style.welcomeLogo = UIImage(named: "sexywaffles-logo")
-        
-        // Invite URL configuration
         ActorSDK.sharedActor().inviteUrlHost = "hyenas.sexywaffles"
         ActorSDK.sharedActor().inviteUrlScheme = "gooner"
         
-        // Support Information configuration
-        
-        // Push Configuration
-        // Enter Here your push id
         ActorSDK.sharedActor().apiPushId = 22081987
-        // Enable Push Notifications only after log in
         ActorSDK.sharedActor().autoPushMode = AAAutoPush.AfterLogin
         
         // Styling of app
         let style = ActorSDK.sharedActor().style
-        style.chatBgColor = UIColor.whiteColor()
+        style.chatBgColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        style.searchStatusBarStyle = .default
+        style.dialogAvatarSize = 58
+        style.welcomeLogo = UIImage(named: "sexywaffles-logo")
         
         // Creating Actor
         ActorSDK.sharedActor().createActor()
     }
     
-    override func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-        super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [AnyHashable: Any]?) -> Bool {
+        super.application(application, didFinishLaunchingWithOptions: launchOptions as! [UIApplicationLaunchOptionsKey : Any]?)
         
-        BITHockeyManager.sharedHockeyManager().configureWithIdentifier("a1f964f1c155443f9b9aa0639772c029");
-        BITHockeyManager.sharedHockeyManager().startManager();
-        BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation(); // This line is obsolete in the crash only build
+        BITHockeyManager.shared().configure(withIdentifier: "a1f964f1c155443f9b9aa0639772c029");
+        BITHockeyManager.shared().start();
+        BITHockeyManager.shared().authenticator.authenticateInstallation();
 
-        // Showing
         ActorSDK.sharedActor().presentMessengerInNewWindow()
         return true
-    }
-    
-    override func actorConfigureBubbleLayouters(builtIn: [AABubbleLayouter]) -> [AABubbleLayouter] {
-        return [MessageView()]
     }
     
     override func actorControllerForAuthStart() -> UIViewController? {

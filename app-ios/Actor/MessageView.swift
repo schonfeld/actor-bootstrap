@@ -11,22 +11,22 @@ import ActorSDK
 import UIKit
 import YYImage
 
-public class SimpleBubbleTextCell : AABubbleTextCell {
+open class SimpleBubbleTextCell : AABubbleTextCell {
 }
 
-public class SimpleCellLayout : TextCellLayout {
+open class SimpleCellLayout : TextCellLayout {
 }
 
-public class MessageView : AABubbleLayouter {
-    public func isSuitable(message: ACMessage) -> Bool {
+open class MessageView : AABubbleLayouter {
+    open func isSuitable(_ message: ACMessage) -> Bool {
         return message.content is ACTextContent
     }
     
-    public func buildLayout(peer: ACPeer, message: ACMessage) -> AACellLayout {
+    open func buildLayout(_ peer: ACPeer, message: ACMessage) -> AACellLayout {
         return SimpleCellLayout(message: message, peer: peer, layouter: self)
     }
     
-    public func cellClass() -> AnyClass {
+    open func cellClass() -> AnyClass {
         return SimpleBubbleTextCell.self
     }
 }
